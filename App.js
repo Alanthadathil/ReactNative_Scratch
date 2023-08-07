@@ -3,6 +3,11 @@ import { View, Text, StyleSheet } from "react-native";
 export default function App() {
     return (
         <View style={styles.container}>
+            <View style={styles.darkMode}>
+                <Text style={styles.darkModeText}>
+                    Style Inheritance<Text style={styles.boldText}> Bold</Text>
+                </Text>
+            </View>
             <View
                 style={[
                     styles.box,
@@ -23,6 +28,15 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+    darkMode: {
+        backgroundColor: "black",
+    },
+    darkModeText: {
+        color: "#fff",
+    },
+    boldText: {
+        fontWeight: "bold",
+    },
     container: {
         flex: 1,
         backgroundColor: "plum",
