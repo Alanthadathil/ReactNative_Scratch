@@ -24,7 +24,9 @@ export default function App() {
             >
                 <Text>StyleSheet Api</Text>
             </View> */}
-            <Box style={{ backgroundColor: "#5f9ea0" }}>Box 1</Box>
+            <Box style={{ backgroundColor: "#5f9ea0", paddingVertical: 100 }}>
+                Box 1
+            </Box>
             <Box style={{ backgroundColor: "#faebd7" }}>Box 2</Box>
             <Box style={{ backgroundColor: "#00ffff" }}>Box 3</Box>
             {/* <Box style={{ backgroundColor: "#0000ff" }}>Box 4</Box> */}
@@ -42,10 +44,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: "row",
-        justifyContent: "space-between",
-        // flex: 1,
-        // backgroundColor: "plum",
-        // padding: 60,
+        alignItems: "baseline",
         marginTop: 64,
         borderWidth: 6,
         borderColor: "red",
