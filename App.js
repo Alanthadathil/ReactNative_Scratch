@@ -24,23 +24,11 @@ export default function App() {
             >
                 <Text>StyleSheet Api</Text>
             </View> */}
-            <Box
-                style={{ backgroundColor: "#5f9ea0", alignSelf: "flex-start" }}
-            >
-                Box 1
-            </Box>
-            <Box style={{ backgroundColor: "#faebd7", alignSelf: "flex-end" }}>
-                Box 2
-            </Box>
-            <Box style={{ backgroundColor: "#00ffff", alignSelf: "center" }}>
-                Box 3
-            </Box>
-            <Box style={{ backgroundColor: "#0000ff", alignSelf: "stretch" }}>
-                Box 4
-            </Box>
-            <Box style={{ backgroundColor: "#8a2be2", alignSelf: "auto" }}>
-                Box 5
-            </Box>
+            <Box style={{ backgroundColor: "#5f9ea0" }}>Box 1</Box>
+            <Box style={{ backgroundColor: "#faebd7" }}>Box 2</Box>
+            <Box style={{ backgroundColor: "#00ffff" }}>Box 3</Box>
+            <Box style={{ backgroundColor: "#0000ff" }}>Box 4</Box>
+            <Box style={{ backgroundColor: "#8a2be2" }}>Box 5</Box>
             <Box style={{ backgroundColor: "#a52a2a" }}>Box 6</Box>
             {/*<Box style={{ backgroundColor: "#deb887" }}>Box 7</Box>
             <Box style={{ backgroundColor: "#7fff00" }}>Box 8</Box>
@@ -53,10 +41,11 @@ export default function App() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+        flexDirection: "row",
         marginTop: 64,
         borderWidth: 6,
         borderColor: "red",
-        alignItems: "flex-end",
+        flexWrap: "wrap",
     },
     // darkMode: {
     //     backgroundColor: "black",
