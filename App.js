@@ -30,8 +30,8 @@ export default function App() {
             <Box style={{ backgroundColor: "#0000ff" }}>Box 4</Box>
             <Box style={{ backgroundColor: "#8a2be2" }}>Box 5</Box>
             <Box style={{ backgroundColor: "#a52a2a" }}>Box 6</Box>
-            {/*<Box style={{ backgroundColor: "#deb887" }}>Box 7</Box>
-            <Box style={{ backgroundColor: "#7fff00" }}>Box 8</Box>
+            <Box style={{ backgroundColor: "#deb887" }}>Box 7</Box>
+            {/*<Box style={{ backgroundColor: "#7fff00" }}>Box 8</Box>
             <Box style={{ backgroundColor: "#d2691e" }}>Box 9</Box>
             <Box style={{ backgroundColor: "#dc143c" }}>Box 10</Box> */}
         </View>
@@ -40,12 +40,13 @@ export default function App() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-        flexDirection: "row",
+        // flex: 1,
+        height: 300,
+        flexWrap: "wrap",
+        alignContent: "space-around",
         marginTop: 64,
         borderWidth: 6,
         borderColor: "red",
-        flexWrap: "wrap",
     },
     // darkMode: {
     //     backgroundColor: "black",
